@@ -6,8 +6,9 @@ function App() {
   useEffect(() => webApp.ready(), [])
   const onClose = () => webApp.close()
   return (
-    <div onClick={onClose} className="App">
+    <div className="App">
       work
+      <button onClick={onClose}>Закрыть приложение</button>
     </div>
   );
 }
