@@ -1,6 +1,6 @@
 import './App.css';
 import {useEffect} from "react";
-import Images from "./Images";
+import AppRouter from "./AppRouter"
 const webApp = window.Telegram.WebApp
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       work
       <button onClick={onClose}>Закрыть приложение</button>
-      <Images data={["https://api.memegen.link/images/panik-kalm-panik.png"]}/>
+      <AppRouter />
     </div>
   );
 }
